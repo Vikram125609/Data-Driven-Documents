@@ -1,9 +1,9 @@
-import Smily from "./Smily/Smily";
+import Corona from "./Corona/Corona";
 
 function App() {
   return (
     <div className="App">
-      <Smily />
+      <Corona />
     </div>
   );
 }
