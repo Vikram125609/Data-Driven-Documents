@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Driven Document</title>
+  </head>
+  <body>
+    <h3>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quam
+      autem ab optio, exercitationem id laboriosam ipsam animi porro, voluptatum
+      et inventore in dolorem saepe iure corporis voluptatibus at reiciendis
+      eius quidem dicta. Iusto vero debitis architecto expedita aut perferendis
+    </h3>
+    <ul></ul>
+    <svg height="300px" width="300px"></svg>
+  </body>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    hero = ["hanuman", "rama", "govind"];
+
+    d3.select("h3").style("font-size", "20px");
+
+    d3.select("ul")
+      .selectAll("li")
+      .data(hero)
+      .enter()
+      .append("li")
+      .text((hero) => hero);
+
+    let number = [20, 30, 50, 30, 10, 90];
+
+    let bar_height = 40;
+
+    d3.select("svg")
+      .selectAll("rect")
+      .data(number)
+      .enter()
+      .append("rect")
+      .attr("width", (d) => d)
+      .attr("height", bar_height -  4)
+      .attr("transform", (d, i) => 'translate(100,' + i * bar_height + ')');
+      
+  </script>
+</html>
