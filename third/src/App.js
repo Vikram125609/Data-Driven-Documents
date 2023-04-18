@@ -1,9 +1,10 @@
-import Corona from "./Corona/Corona";
+import First from "./Vega/First";
+
 
 function App() {
   return (
     <div className="App">
-      <Corona />
+      <First />
     </div>
   );
 }

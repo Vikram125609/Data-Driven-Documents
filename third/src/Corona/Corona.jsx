@@ -5,12 +5,12 @@ const Corona = () => {
     const [data, setData] = useState()
     const [isMounting, setIsMounting] = useState(true);
     useEffect(() => {
-        const data = axios.get('https://gist.githubusercontent.com/Vikram125609/99689fc97c4270a705f86943b33b12ae/raw/Data.csv');
-        data.then((data) => {
-            setData(data?.data);
-        }).catch((error) => {
-            console.log(error);
-        })
+        // const data = axios.get('https://gist.githubusercontent.com/Vikram125609/99689fc97c4270a705f86943b33b12ae/raw/Data.csv');
+        // data.then((data) => {
+        //     setData(data?.data);
+        // }).catch((error) => {
+        //     console.log(error);
+        // })
         // const data = csv('https://gist.githubusercontent.com/Vikram125609/99689fc97c4270a705f86943b33b12ae/raw/Data.csv');
         // data.then((data) => {
         //     setData(data);
