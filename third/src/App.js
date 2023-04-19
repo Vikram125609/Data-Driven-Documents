@@ -1,4 +1,4 @@
-import First from "./Vega/First";
+import First from "./Bar/First";
 
 
 function App() {
